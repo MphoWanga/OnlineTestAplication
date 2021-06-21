@@ -1,0 +1,16 @@
+
+  <router-outlet></router-outlet>
+<div class="container" [ngClass]="{'overlay': start}" style="margin-top: -190px;">
+    <h2 class="counter" *ngIf="start">{{ counter }}</h2>
+    
+    
+    <button>
+   <a *ngIf="!start" (click)="startCounter();">Let the Games Begin  <br><img src="../assets/icons/go.png" width="50px"></a>
+  
+  </button>
+    
+  </div>
+
+
+  
+

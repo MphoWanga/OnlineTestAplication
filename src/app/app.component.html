@@ -1,0 +1,23 @@
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/">Home</a>
+        <a class="nav-item nav-link" routerLink='/aboutus'>About Us</a>
+        <a class="nav-item nav-link" routerLink="/assessment">Assessment Overview</a>
+        <a class="nav-item nav-link" (click)="logout()">Logout</a>
+    </div>
+</nav><br>
+
+
+<!-- main content container -->
+<div class="container">
+    <div class="p-5 mb-4 bg-light rounded-3">
+        <div class="container-fluid py-5">
+            <router-outlet>
+                <!-- Placeholder for rendering rotues -->
+            </router-outlet>
+        </div>
+    </div>
+
+
+
